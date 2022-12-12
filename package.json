@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@nivo/core": "^0.80.0",
+    "@nivo/geo": "^0.80.0",
     "@syncfusion/ej2": "^20.3.60",
     "@syncfusion/ej2-react-popups": "^20.3.60",
     "@testing-library/jest-dom": "^5.16.5",
@@ -49,4 +51,3 @@
     "tailwindcss": "^3.2.4"
   }
 }
-
