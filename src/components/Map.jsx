@@ -21,7 +21,7 @@ const Map = ({ data }) => {
       unknownColor="#666666"
       label="properties.name"
       valueFormat=".2s"
-      projectionScale={106}
+      projectionScale={159}
       projectionTranslation={[0.5, 0.5]}
       projectionRotation={[0, 0, 0]}
       enableGraticule={true}
