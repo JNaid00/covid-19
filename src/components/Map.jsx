@@ -4,6 +4,15 @@ import {geoFeatures} from "../contexts/mockGeoFeatures"
 const Map = ({ data }) => {
   return (
     <ResponsiveChoropleth
+    theme={{
+      legends:{
+        text:{
+          // stroke: "gray",
+          // strokeWidth: 1,
+          fontSize: 15,
+        }
+      }
+    }}
       data={data}
       features={geoFeatures.features}
       margin={{ top: 0, right: 0, bottom: 0, left: 0 }}
@@ -80,7 +89,7 @@ const Map = ({ data }) => {
           translateX: 20,
           translateY: -97,
           itemsSpacing: 3,
-          itemWidth: 94,
+          itemWidth: 111,
           itemHeight: 18,
           itemDirection: "left-to-right",
           itemTextColor: "#444444",

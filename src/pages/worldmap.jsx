@@ -37,21 +37,25 @@ const Worldmap = () => {
   return (
     <div>
       <div className="flex flex-wrap lg:flex-nowrap justify-center md:mx-5 mx-1">
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-xl w-full p-10">
+        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-xl w-full p-5">
+          
+          
+          
+          
           <Tabs.Group aria-label="Tabs with underline" style="underline">
             <Tabs.Item title="Total Cases">
               {" "}
-              <div className="h-screen max-h-[800px]">
+              <div className="h-screen max-h-[600px]">
                 <Map data={countryArray} />
               </div>
             </Tabs.Item>
             <Tabs.Item title="Total Deaths">
-              <div className="h-screen max-h-[800px]">
+              <div className="h-screen max-h-[600px]">
                 <Map data={totalDeaths} />
               </div>
             </Tabs.Item>
             <Tabs.Item title="Total Recoveries">
-              <div className="h-screen max-h-[800px]">
+              <div className="h-screen max-h-[600px]">
                 <Map data={totalRecoveries} />
               </div>
             </Tabs.Item>
