@@ -9,7 +9,7 @@ const Map = ({ data }) => {
         text:{
           // stroke: "gray",
           // strokeWidth: 1,
-          fontSize: 15,
+          fontSize: 17,
         }
       }
     }}

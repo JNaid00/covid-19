@@ -6,6 +6,7 @@ import { IoMdGlobe } from "react-icons/io";
 import { Tooltip } from "flowbite-react";
 import { AiOutlineHome, AiOutlineFlag } from "react-icons/ai";
 import { useStateContext } from "../contexts/ContextProvider";
+import {TbTable} from 'react-icons/tb' 
 const links = [
   {
     title: "Home",
@@ -29,6 +30,11 @@ const links = [
         name: "World Map",
         to: "worldmap",
         icon: <IoMdGlobe />,
+      },
+      {
+        name: "Table",
+        to: "table",
+        icon: <TbTable />,
       },
     ],
   },
