@@ -18,7 +18,7 @@ const Home = () => {
       });
   }, []);
 
-  console.log(alldata);
+  console.log(alldata.updated );
   return (
     <div className="mt-12">
       <div className="flex flex-wrap lg:flex-nowrap justify-center md:mx-5 mx-1">
@@ -33,7 +33,7 @@ const Home = () => {
           </div>
           <hr className="h-1 rounded-full md:max-w-3xl max-w-xs mx-auto bg-orange-600  mt-10"></hr>
 
-          <h2 class="text-4xl font-extrabold dark:text-white text-center mt-4">
+          <h2 className="text-4xl font-extrabold dark:text-white text-center mt-4">
             Global Stats
           </h2>
           <div className="flex mt-5 flex-wrap">
@@ -44,7 +44,7 @@ const Home = () => {
                   Total Cases:
                 </h5>
                 <p className="text-orange-600 font-normal dark:text-gray-400">
-                  {alldata.cases}
+                  {alldata.cases !== undefined ? alldata.cases.toLocaleString() : 0}
                 </p>
               </div>
             </div>
@@ -55,7 +55,7 @@ const Home = () => {
                   Total Deaths:
                 </h5>
                 <p className="text-orange-600 font-normal dark:text-gray-400">
-                  {alldata.deaths}
+                  {alldata.deaths !== undefined ? alldata.deaths.toLocaleString() : 0}
                 </p>
               </div>
             </div>
@@ -66,18 +66,17 @@ const Home = () => {
                   Total Recoveries:
                 </h5>
                 <p className="text-orange-600 font-normal dark:text-gray-400">
-                  {alldata.recovered}
+                  {alldata.recovered !== undefined ? alldata.deaths.toLocaleString() : 0}
                 </p>
               </div>
             </div>
-            
           </div>
 
           {/* Last updated */}
-            
-            {/* <h5>
-              Last Updated: <ReactTimeAgo date={alldata.updated} />
-            </h5> */}
+
+          <h5 className="text-center">
+          Last Updated: {alldata.updated !== undefined ?  <ReactTimeAgo date={alldata.updated} /> : "Unkown"}
+          </h5>
         </div>
       </div>
     </div>
