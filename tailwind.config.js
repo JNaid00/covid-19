@@ -10,6 +10,7 @@ module.exports = {
       body: ["Open Sans", "sans-serif"],
     },
     extend: {
+
       fontSize: {
         14: "14px",
       },
@@ -43,6 +44,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('https://i.ibb.co/MkvLDfb/Rectangle-4389.png')",
+        "home-image": "url('/public/background.jpg')"
       },
     },
   },
