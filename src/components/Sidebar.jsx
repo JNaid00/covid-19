@@ -4,7 +4,7 @@ import { FcDataRecovery } from "react-icons/fc";
 import { MdOutlineCancel } from "react-icons/md";
 import { IoMdGlobe } from "react-icons/io";
 import { Tooltip } from "flowbite-react";
-import { AiOutlineHome, AiOutlineFlag } from "react-icons/ai";
+import { AiOutlineHome, AiOutlineFlag, AiOutlineGlobal } from "react-icons/ai";
 import { useStateContext } from "../contexts/ContextProvider";
 import {TbTable} from 'react-icons/tb' 
 const links = [
@@ -35,6 +35,16 @@ const links = [
         name: "Table",
         to: "table",
         icon: <TbTable />,
+      },
+    ],
+  },
+  {
+    title: "Historical",
+    links: [
+      {
+        name: "Global",
+        to: "globalhistory",
+        icon: <AiOutlineGlobal />,
       },
     ],
   },

@@ -31,7 +31,7 @@ const Home = () => {
               This website servers as information an site for COVID-19
             </p>
           </div>
-          <hr className="h-1 rounded-full md:max-w-3xl max-w-xs mx-auto bg-orange-600  mt-10"></hr>
+          <hr className="h-0.5 rounded-full md:max-w-3xl max-w-xs mx-auto bg-orange-600  mt-10"></hr>
 
           <h2 className="text-4xl font-extrabold dark:text-white text-center mt-4">
             Global Stats
@@ -66,7 +66,7 @@ const Home = () => {
                   Total Recoveries:
                 </h5>
                 <p className="text-orange-600 font-normal dark:text-gray-400">
-                  {alldata.recovered !== undefined ? alldata.deaths.toLocaleString() : 0}
+                  {alldata.recovered !== undefined ? alldata.recovered.toLocaleString() : 0}
                 </p>
               </div>
             </div>

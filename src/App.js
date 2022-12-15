@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import { useStateContext } from "./contexts/ContextProvider";
-import { Home, Countries, WorldMap, Table } from "./pages";
+import { Home, Countries, WorldMap, Table, Globalhistory } from "./pages";
 import "./App.css";
 const App = () => {
   const { activeMenu } = useStateContext();
@@ -53,6 +53,7 @@ const App = () => {
                 <Route path="/countries" element={<Countries />} />
                 <Route path="/worldmap" element={<WorldMap />} />
                 <Route path="/table" element={<Table />} />
+                <Route path="/globalhistory" element={<Globalhistory />} />
               </Routes>
             </div>
         </div>
