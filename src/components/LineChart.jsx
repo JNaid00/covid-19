@@ -1,7 +1,7 @@
 import React from "react";
 import { ResponsiveLine } from "@nivo/line";
 
-const LineChart = ({ data }) => {
+const LineChart = ({ data, curveType = "linear",  debugMesh= false }) => {
   return (
     <ResponsiveLine
       data={data}
@@ -15,6 +15,7 @@ const LineChart = ({ data }) => {
         reverse: false,
       }}
       yFormat=" >-.2f"
+      curve={curveType}
       axisTop={null}
       axisRight={null}
       axisBottom={{
@@ -42,6 +43,7 @@ const LineChart = ({ data }) => {
       pointBorderColor={{ from: "serieColor" }}
       pointLabelYOffset={-12}
       useMesh={true}
+      debugMesh={debugMesh}
       legends={[
         {
           anchor: "bottom-right",

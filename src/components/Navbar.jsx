@@ -5,15 +5,6 @@ import { useStateContext } from "../contexts/ContextProvider";
 import { Tooltip } from "flowbite-react";
 const Navbar = () => {
   const { activeMenu, setActiveMenu ,  setScreenSize, screenSize} = useStateContext();
-  useEffect(() => {
-    const handleResize = () => setScreenSize(window.innerWidth);
-
-    window.addEventListener('resize', handleResize);
-
-    handleResize();
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   
   useEffect(() => {
